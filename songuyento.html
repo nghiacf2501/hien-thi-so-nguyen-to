@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let number = +prompt("nhập số nguyên tố cần in ra: ");
+    let a = 2;
+    let count = 0;
+    while (a > 0) {
+        if (total(a)) {
+            document.write("số nguyên tố là : " + a + "</br>");
+            count++
+            if (count == number) {
+                break;
+            }
+        }
+        a++
+    }
+    function total(a) {
+        for (let i =2; i <= a / 2; i++) {
+            if (a % i == 0) {
+                return  false
+            }
+        }
+        return  true
+    }
+</script>
